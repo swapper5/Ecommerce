@@ -8,6 +8,7 @@ import Body from './Body';
 import { FaShoppingBag } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import Login from './Login';
 
 const NavBar = () => {
     const [show, setShow] = useState(false);
@@ -98,6 +99,12 @@ const NavBar = () => {
                             {show3 && <ul class="dropdown-nav dropdown-nav3" onMouseLeave={dontShowHandler}>
                                 <Body />
                             </ul>}
+
+                        </li>
+
+                        <li class="" onMouseOver={showHandler3} >
+                            
+                            <button onClick={Login}>Login</button>
 
                         </li>
 
